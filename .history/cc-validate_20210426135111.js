@@ -31,7 +31,9 @@ function validateCreditCard(ccNum) {
   stringNumber = ccNum.split("-").join("");
   if (stringNumber.length == 16) console.log("Its 16");
 
+  console.log(ccNum);
   ccNum = ccNum.split("-").join("");
+  console.log(ccNum);
 
   // Check if last digit of credit card number is even
   parseInt(ccNum[ccNum.length - 1]) % 2
